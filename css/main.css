@@ -1,0 +1,60 @@
+/* Christopher Nwanya and Student Number: 8903828 */
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.hefo{
+    border:5px solid orange;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+h1,h2{
+    color: greenyellow;
+    font-variant: small-caps;
+    font-size: 16px;
+}
+footer p{
+    color: yellowgreen;
+}
+main{
+    width: 900px;
+    float: left;
+    padding: 10px; 
+    margin: 10px;
+}
+aside{
+    width: 200px;
+    float: right;
+    padding: 10px;
+    margin: 10px
+}
+footer{
+    clear: both;
+}
+.mainimg{
+    border: 3px solid black;
+}
+figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 14px;
+}
+ul li{
+    list-style-type: none;
+    line-height: 25px;
+}
+li > a{
+    text-decoration: none;
+    color: yellowgreen;
+}
+a:hover{
+    background-color: rgb(80, 138, 245);
+}
