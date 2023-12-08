@@ -1,0 +1,100 @@
+<!--Nwanya Christopher
+Email: cnwanya3828@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Will, Smith, Actor, Singer, USA, Comedian">
+    <meta name="description" content="This iste is about Will Smith">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Will Smith Enquiry Form</title>
+
+</head>
+<body>
+    <header class="hefo">
+        <h1>Will Smith</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Media</a>
+                    <ul class="sub-menu">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="video.html">Video</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">Contact</a> </li>
+            
+        </ul>
+    </nav>
+      <main class="structural">
+        <h2>Contact</h2>
+            <form>
+                <div>
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="firstname" name="lastname" required autofocus/>
+                </div>
+                <div>
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="firstname" name="lastname" required autofocus/>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div>
+                    <label for="Phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required/>
+                  </div>
+                
+                <div>
+                    <label for="help">Why do you want to meet Will?</label><br/>
+                <select name="help" id="help" required>
+                        <option value="0">Movie Proposal</option>
+                        <option value="html">Music Proposal</option>
+                        <option value="css">Entertainment</option>
+                        <option value="both">Money</option>
+                </select>
+                </div>
+                <div>
+                    <label for="comment">Brief Discription</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="human" id="human" value="human" required>
+                    <label for="human"> I am not a robot</label>
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="submit">
+                </div>
+            
+            </form>
+    </main>
+    <aside>
+        <h2>Additional Information</h2>
+        <ul>
+            <li >
+                <a href="https://en.wikipedia.org/wiki/Will_Smith" target="_blank">Wikipedia</a>
+            </li>
+            <li>
+                <a href="https://www.imdb.com/name/nm0000226/" target="_blank">IMDb</a>
+            </li>
+        </ul>
+    </aside>
+    <footer class="hefo">
+         <p>&copy;Christopher Chidebe 2023</p><!--gett-->
+    </footer>
+   
+
+    
+    
+
+</body>
+</html>

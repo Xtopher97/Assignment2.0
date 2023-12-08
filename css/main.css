@@ -1,42 +1,139 @@
-/* Christopher Nwanya and Student Number: 8903828 */
+/*Name: Nwanya Christopher C
+Student number: 8903828 */
+html{
+    font: normal normal normal 1.1em/1.5 verdana, Arial, Helvetica, sans-serif;
+}
 body{
-    width: 100%;
+    width : 100%;
     max-width: 1200px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    margin: 1rem auto;
+ 
+    padding: 0.06em;
+    box-shadow: 0 0 0 5 black;
+}
+body>header{
+    grid-area: gridheader;
+}
+body>nav{
+    grid-area: gridnav;
+}
+body>main{
+    grid-area: gridmain;
+}
+body>aside{
+    grid-area: gridaside;
+}
+body>footer{
+    grid-area: gridfooter;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "gridheader gridheader gridheader"
+    "gridnav gridnav gridnav"
+    "gridmain gridmain gridaside"
+    "gridfooter gridfooter gridfooter";
+    column-gap: 0.5rem;
 }
 .hefo{
-    border:5px solid orange;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
+    border: 0.06em solid orange;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    margin: 0.3rem;
+    background-image: linear-gradient(to left, greenyellow, black, rgb(236, 200, 132));
 }
-h1,h2{
-    color: greenyellow;
+h1{
+    color: rgb(26, 35, 13);
     font-variant: small-caps;
-    font-size: 16px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h2{
+    color:  rgb(106, 158, 31);
+    font-variant: small-caps;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+nav{
+    background-color: cornsilk;
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "navlink navlink navlink";
+}
+nav li{
+    position:relative;
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+  }
+nav ul li a {
+    color: green;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    border: 0.2em solid orange;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+    display: flex;
+}
+nav ul li a:hover {
+    color: cornsilk;
+    background-color: red;
+    border: 0.2rem solid cornsilk;
+}
+.sub-menu{
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    background-color: cornsilk;
+    box-shadow: 0 0 0.25rem cadetblue;
+    width: 100%;
+}
+.sub-menu li a{
+    color: green;
+    display: block;
+    border: 0.2rem solid orange;
+    padding: .5rem;
+}
+.sub-menu{
+    display: none;
+}
+nav ul li:hover .sub-menu{
+    display: block;
 }
 footer p{
     color: yellowgreen;
 }
 main{
-    width: 900px;
+    background-color:burlywood;
+    /*width: 900px;
     float: left;
     padding: 10px; 
-    margin: 10px;
+    margin: 10px;*/
 }
 aside{
-    width: 200px;
+    /*width: 200px;
     float: right;
     padding: 10px;
-    margin: 10px
+    margin: 10px;*/
+    background: aqua url("../images/will\ 4.jpeg") left top / cover;
 }
-footer{
-    clear: both;
-}
-.mainimg{
+
+#mainimg{
+    width: 50%;
+    float: left;
     border: 3px solid black;
+
+    clip-path: polygon(47.75% -6px, 63.14% 10.59%, 88.73% 51.49%, 69.07% 84.46%, 50% 100%, 0.37% 101.42%, 0px 50%, -0.49% 2.32%);
+    shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 figcaption{
     font-weight: bold;
@@ -57,4 +154,94 @@ li > a{
 }
 a:hover{
     background-color: rgb(80, 138, 245);
+}
+.structural{
+    padding: 1rem;
+    margin: 0.625rem;
+}  
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+}
+img{
+    width : 80%;
+    height : 80%;
+}
+#imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    shape-outside: polygon(0px 0px, 50.1% 17px, 63.53% 84.8%, 68.06% 104.05%, 1.33% 103.08%);
+    shape-margin: 1rem;
+}
+form{
+    border: 0.3em dashed darkblue; 
+    padding: 0.3em;
+}
+input[type=text], input[type=email], input[type=tel], input[type=password], input[type=submit], select, option {
+    display: block;
+    width: 50%;
+    height: 2em;
+}
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+select, option, label, legend, input[type=submit]{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+textarea{
+    display: block;
+    width: 50%;
+}
+fieldset{
+    border: none;
+}
+
+@media (max-width : 800px){
+    html{
+        font-size : 14px;
+        color : aquamarine;
+    }
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    aside{
+        background-image: center/cover no-repeat border-box url('../images/Will.jpeg');
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    html{
+        font-size : 12px;
+        color: beige;
+    }
+    body{
+        display:block;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    aside{
+        background-image: url('../images/Will.jpeg');
+      
+    }
+   
+    img{
+        width : 90%;
+        height : 90%;
+    }
 }
