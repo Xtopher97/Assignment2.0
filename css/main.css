@@ -209,7 +209,38 @@ textarea{
 fieldset{
     border: none;
 }
-
+#table{
+    display: block;
+}
+table, th, td, tr{
+    border: 0.1em solid black;
+    padding: 0.5em;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    overflow:hidden
+}
+tr{
+    border-bottom: 0.1em solid black;
+}
+thead th{
+    background-color: aliceblue;
+}
+tbody tr:hover{
+    background-color: antiquewhite;
+}
+tbody td, tbody th{
+    position: relative;
+    z-index: 1;
+}
+tbody th:hover::after{
+    content: "";
+    position: absolute;
+    background-color: olive;
+    left: 0;
+    top: -5000px;
+}
 @media (max-width : 800px){
     html{
         font-size : 14px;
